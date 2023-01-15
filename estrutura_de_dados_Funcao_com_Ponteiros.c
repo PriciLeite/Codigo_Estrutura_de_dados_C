@@ -25,17 +25,18 @@ int main(void)
 
     Soma(valorA, valorB, &i_resultado);
 
-    printf("Soma: %d\n", i_resultado);
+    printf("Soma = %d\n", i_resultado);
 
     return 0;
 }
     void Soma(int ValorA, int ValorB, int *pi_resultado2)
     {
-        printf("Endereco da variavel pi_resultado: %d\n", pi_resultado2);
+        printf("Endereco da variavel pi_resultado: %d\n", &pi_resultado2);
 
         *pi_resultado2 = ValorA + ValorB;
-            
-
-    return;
+        printf("Endereco armazenado em pi_resultado2 %d\n", pi_resultado2);   
+        printf("valor da variavel apontada por pi_resultado2 = %d\n", *pi_resultado2); 
+    
+        return;
 
     }
