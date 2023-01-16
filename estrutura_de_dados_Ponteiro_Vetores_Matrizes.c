@@ -1,6 +1,7 @@
 // Todo vetor tem a característica de um Ponteiro, onde seus valores podem ser 
 // acessados através dos indíces do vetor; 
 // Formas de obtenção dos indíces do vetor: 1) &t[0] ou apenas t;
+// Todo Ponteiro oculpa 8 bytes na memória Stack;
 #include <stdio.h>
 #include <locale.h>
 #include <string.h>
