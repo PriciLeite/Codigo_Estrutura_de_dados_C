@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
     printf("\n %1d %c", (t+3), *(t+3));
     printf("\n %1d %c", (t+4), *(t+4));
 
-  
+    
 
     return 0;
 
