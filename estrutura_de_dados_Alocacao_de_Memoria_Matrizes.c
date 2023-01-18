@@ -12,16 +12,17 @@
 int main(void)
 {
     int *p; // Ocupa 8 bytes na Stack.
-    int i,k,n; // Ocupa 4 bytes na Stack.
+    int i,k,n; // Ocupa 4 bytes na Stack cada.
 
-    printf("Digite o tamanho do Vetor: ");
-    scanf("[%d]", &i);
+    printf("Digite um numero inteiro para o tamanho do vetor: ");
+    scanf("%d", &i);
 
    
    //Malloc reserva espaço suficiente p/ int.
-    p = (int*)(malloc(i * sizeof(int))); // Cada int ocupa 4 bytes.
+   // Cada int ocupa 4 bytes. Será i * 4 bytes = total de espaço alocado(bytes).
+    p = (int*)malloc(i * sizeof(int)); 
 
-    if (p = NULL)
+    if (p == NULL)
     {
         printf("Erro na alocacao de memoria: ");    
         exit(1);
@@ -29,27 +30,26 @@ int main(void)
     
     for (k = 0; k < i; k++)
     {
-        printf("Digite o numero para o indice: ");
-        scanf("%d", &k);
+        printf("Digite o numero para o indice [%d]: ",k);        
         scanf("%d", &p[k]);        
     }
 
     
     for (k = 0; k < i; k++)
     {
-        printf("O numero do indice %d é %d", k, p[k]);    
+        printf("\nO numero do indice [%d] e: %d\n", k, p[k]);    
     }
 
     
-    printf("Digite quantos elementos quer adicionar ao vetor: ");
+    printf("\nDigite quantos elementos quer adicionar ao vetor: ");
     scanf("%d", &n);
     
 
     // Realloc altera o tamanho do Dinâmicamente.
     // Recebe o ponteiro para o vetor anterios e retorna um novo espaço alocado;
-    p = (int*)(realloc(p,(i+n)*sizeof(int))); 
+    p = (int*)realloc(p,(i+n)*sizeof(int)); 
 
-    if (p = NULL)
+    if (p == NULL)
     {
         printf("Erro em alocacao de memoria: ");
         exit(1);
@@ -57,13 +57,13 @@ int main(void)
     
     for (k = 0; k < (n+i); k++)
     {
-        printf("Digite o numero para o indice %d: ", k);
+        printf("Digite o numero para o indice [%d]: ", k);
         scanf("%d", &p[k]);
     }
     
     for (k = 0; k < (i+n); k++)
     {
-        printf("O numero do indice %d e %d\n", k, p[k]);
+        printf("\nO numero do indice [%d] e: %d\n", k, p[k]);
     }
     
     free(p);
