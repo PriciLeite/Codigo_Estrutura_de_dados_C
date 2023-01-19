@@ -11,14 +11,14 @@ int main(void)
     int valorB;
     int i_resultado;
 
-    printf("Digite Valor 1: ");
+    printf("Digite Valor(1): ");
     scanf("%d",&valorA);
 
-    printf("Digite Valor 2: ");
+    printf("\nDigite Valor(2): ");
     scanf("%d",&valorB);
 
     // Obtendo o endereço da variável resultado:
-    printf("Endereco da variavel i_resultado: %d\n", &i_resultado);
+    printf("\nEndereco da propria &i_resultado: %d\n", &i_resultado);
     
     // Realizando a soma direto na variável resultado 
     //passando o endereço da variável:
@@ -31,11 +31,11 @@ int main(void)
 }
     void Soma(int ValorA, int ValorB, int *pi_resultado2)
     {
-        printf("Endereco da variavel pi_resultado: %d\n", &pi_resultado2);
-
         *pi_resultado2 = ValorA + ValorB;
-        printf("Endereco armazenado em pi_resultado2 %d\n", pi_resultado2);   
-        printf("valor da variavel apontada por pi_resultado2 = %d\n", *pi_resultado2); 
+   
+        printf("\nEndereco da propria &pi_resultado: %d\n", &pi_resultado2);
+        printf("\nEndereco apontado por pi_resultado2 %d\n", pi_resultado2);   
+        printf("\nValor apontada por *pi_resultado2 = %d\n", *pi_resultado2); 
     
         return;
 

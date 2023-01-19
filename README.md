@@ -7,7 +7,7 @@
 
  Funções de alocação de memória Malloc / Calloc / Realloc / Free.
 
-MALLOC: foi possivel fazer alocação de memória DINÂMICA, ou seja, em periodo de EXCUÇÃO DO PROGRAMA, por meio de VETORES que não tinha seus valores previamente definidos. Por isso dito em EXECUÇÃO.
+MALLOC: foi possivel fazer alocação de memória DINÂMICA, ou seja, em periodo de EXCUÇÃO DO PROGRAMA, por meio de VETORES que não tinha seus valores previamente definidos. Por isso dito em EXECUÇÃO. Após definido a quantidade de ÍNDICES DO VETOR foi possível atribuir para cada POSIÇÃO um valor para ser gravado na STACK. 
 
 REALLOC: Foi feito a realocação do tamanho desses VETORES após ter feito uma alocação e precisou inserir novos indices para o VETOR.
 
