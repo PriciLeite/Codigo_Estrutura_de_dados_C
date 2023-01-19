@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <locale.h>
 
-static void ignoreRestOfLine(void) // Para receber o espa?o entre o nome;
+static void ignoreRestOfLine(void) //Para igonorar o espaços entre caracter;
 {
    char c;
    while((c = getchar()) != '\n' && c != EOF);
@@ -55,8 +55,6 @@ static void ignoreRestOfLine(void) // Para receber o espa?o entre o nome;
             printf("\nNascimento: %d/%d/%d", p->dt_nascimento.dia,
                                         p->dt_nascimento.mes,
                                         p->dt_nascimento.ano);
-
-
 
 
 

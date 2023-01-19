@@ -17,3 +17,6 @@ Um PONTEIRO p[K] -> J colunas
     
     onde,
 &p[k][x] -> Retorna variação de posição de linhas e colunas.   
+
+Em Ponteiro para Ponteiro, um exemplo pratico de como a chamando à uma função por REFERÊNCIA, gere um PONTEIRO PARA PONTEIRO, quando inicializado um outro ponteiro dentro do Main( );  
+
