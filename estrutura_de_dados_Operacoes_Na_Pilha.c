@@ -23,13 +23,10 @@ int main(int argc, char const *argv[])
                 return true;
 
             else                    // Verificação...
-                return false
+                return false;
             endif
         end     
    */ 
-
-
-
 
     return 0;
 }

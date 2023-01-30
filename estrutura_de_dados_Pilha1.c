@@ -37,8 +37,14 @@ int stacktop()
     return pilha[pos == 0]; /* Retorna o TOPO da pilha sem remover */
 }
 
+
+
 int main(int argc, char **argv[])
 {
+    int *pvariavel;
+    pvariavel = &pilha; /* Verificando posição inicial do vetor */
+
+
     printf("\n Insirindo dados na pilha numeros: (1) (2) (3) \n");
     push(1);
     push(2);
@@ -46,8 +52,17 @@ int main(int argc, char **argv[])
 
     printf("\n Verificando dados na pilha ...\n");
 
-    printf("\nTamanho da pilha %d\n", size());
+    /* Verificando Posições da Pilha: */
+    printf("\nPosicao da pilha %p\n", pvariavel);      
+    printf("\nPosicao da pilha %p\n", &pilha[0]); 
+    printf("\nPosicao da pilha %p\n", &pilha[19]);
+    printf("\nValor apontado pela variavel na pilha[0] %p\n", *pvariavel);
+    printf("\nValor apontado pela variavel na pilha[1] %p\n", *pvariavel+1);
+    printf("\nValor apontado pela variavel na pilha[2] %p\n", *pvariavel+2);
     
+
+    printf("\nTamanho da pilha %d\n", size());       
+
     printf("\nPegando dado da pilha %d", pop());
     printf("\nPegando dado da pilha %d", pop());
     printf("\nPegando dado da pilha %d\n", pop());
