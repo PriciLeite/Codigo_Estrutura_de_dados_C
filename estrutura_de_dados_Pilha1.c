@@ -1,4 +1,5 @@
 /* Manipular os dados armazenados na pilha */
+/* Verificando suas posições*/ /* Inserindo dados na pilha */
 
 #include <stdio.h>
 #include <stdlib.h>
