@@ -52,7 +52,7 @@ int main(int argc, char **argv[])
 
     printf("\n Verificando dados na pilha ...\n");
 
-    /* Verificando Posições da Pilha: */
+    /* Extra: Verificando Posições da Pilha: */
     printf("\nPosicao da pilha %p\n", pvariavel);      
     printf("\nPosicao da pilha %p\n", &pilha[0]); 
     printf("\nPosicao da pilha %p\n", &pilha[19]);
