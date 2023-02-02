@@ -99,7 +99,7 @@ int main(void)
     printf("\nTirando da Fila: %d\n", dequeue(&q));
 
     printf("\nFila esta vazia(0 -> Nao 1-> Sim): %d\n", Empty(&q));
-
+    printf("\n");
 
 
     return 0;
