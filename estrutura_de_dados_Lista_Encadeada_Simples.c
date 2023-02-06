@@ -1,4 +1,4 @@
-/* Manipulação de Lista Simples apontando apenas para o endereço posterior */
+/* Manipulação de Lista Encadeada Simples apontando apenas para o endereço posterior */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,7 +7,6 @@ struct Lista
     char string[41];
     int numero;
     struct Lista *Next;   /* >> Ponteiro marcando o inicio da lista... */
-
 };
 
 int main(int argc, char const *argv[])
