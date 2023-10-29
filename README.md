@@ -6,7 +6,7 @@
 <p></br>
 
 Os algoritmos estão dipostos por tópicos, trata-se de um matérial que pode ser utilizado para revisão de estudos e consulta rápida, sobre estrutura de dados.
-#### Os algoritmos são dos estudos do livro: Estrutura de Dados com Algoritmos e C - (Marcos Aurelio Pcker Laureano), e realização dos exercícios propostos.
+#### Os algoritmos são dos estudos do livro: Estrutura de Dados com Algoritmos e C - (Marcos Aurelio Pcker Laureano), e resolução dos exercícios propostos.
 
 
 ### Os tipos de dados: Homogênios(Vetores) ou Heterogênios(Registros):
@@ -25,21 +25,23 @@ https://github.com/PriciLeite/Codigo_Estrutura_de_dados_C/blob/main/estrutua_de_
 
 
 
-Como se dá a alocação dos dados e como manipulalos: Por VALOR ou referência de ENDEREÇO de memória por ponteiros.
-Por meio de alocações Estáticas(Antecede o tamanho da alocação) e Dinâmicas(Alocação definida em execução). Utilizando ponteiros para referênciar alocações previamente feitas na Stack. Vetores em arrays.
+Como se dá a alocação dos dados e como manipulalos: Por VALUE TYPE (Struct) ou REFERENCE TYPE (Heap) com ponteiros.
+Por meio de alocações Estáticas(Alocação automática pelo compilador) e Dinâmicas(Alocação dinamicamente programada). Os ponteiros por sua vez irão referênciar endereços de memória de alocações na Stack.(Havendo alteração da stack, haverá alteração de valor  na impressão de referência, mantém-se o endereço referênciado inalterado). Vetores, arrays, matrizes e classes em OOP (Orientado a objetos) configuram alocação na memória Heap.
 
- Funções de alocação de memória Malloc / Calloc / Realloc / Free.
+As funções para alocação Dinâmica são: Malloc / Calloc / Realloc / Free.
 
-MALLOC: foi possivel fazer alocação de memória DINÂMICA, ou seja, em periodo de EXCUÇÃO DO PROGRAMA, por meio de VETORES que não tinha seus valores previamente definidos. Por isso dito em EXECUÇÃO. Após definido a quantidade de ÍNDICES DO VETOR foi possível atribuir para cada POSIÇÃO um valor para ser gravado na STACK. 
+MALLOC: Alocação em periodo de EXCUÇÃO do programa por meio de VETORES que não tinha seus valores previamente definidos. Por isso dito em EXECUÇÃO. Após definido a quantidade de ÍNDICES DO VETOR foi possível atribuir para cada POSIÇÃO um valor para ser inserido na Heap. 
 
-REALLOC: Foi feito a realocação do tamanho desses VETORES após ter feito uma alocação e precisou inserir novos indices para o VETOR.
+REALLOC: Realocação do tamanho desses VETORES após primeira alocação e posterior inserção de novos índices de reserva para o vetor.
 
-CALLOC: TAMBÉM foi possivel fazer alocação de memória DINÂMICA, foi feito a  declaração de uma Matriz de duas dimensões que exigiu dois ponteiros. PONTEIRO PARA PONTEIRO. 
-Um PONTEIRO p -> i linhas 
-Um PONTEIRO p[K] -> J colunas   
+CALLOC: PONTEIRO -> PONTEIRO. Alocação DINÂMICA na declaração de uma Matriz de duas dimensões Matriz[][] exigindo dois ponteiros. 
+
+p* -> i linhas 
+p[K]* -> J colunas   
     
     onde,
 &p[k][x] -> Retorna variação de posição de linhas e colunas.   
 
-Em Ponteiro para Ponteiro, um exemplo pratico de como a chamando à uma função por REFERÊNCIA, gere um PONTEIRO PARA PONTEIRO, quando inicializado um outro ponteiro dentro do Main( );  
+Inicialização de p* em Main(), chama-se p[k]* -> p*
+
 
