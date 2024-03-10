@@ -5,8 +5,8 @@
 <img align="right" src="https://user-images.githubusercontent.com/109990443/220428874-59b9e4b4-acaf-4fbb-ad7f-26768d06fd5e.png" width="400px">
 <p></br>
 
-Os algoritmos estão dipostos por tópicos, trata-se de um matérial que pode ser utilizado para revisão de estudos e consulta rápida, sobre estrutura de dados.
-#### Os algoritmos são dos estudos do livro: Estrutura de Dados com Algoritmos e C - (Marcos Aurelio Pcker Laureano), e resolução dos exercícios propostos.
+Os algoritmos estão dipostos por tópicos, matérial para revisão de estudos e consulta rápida, sobre estrutura de dados.
+#### Resolução de exercícios propostos, Livro: Estrutura de Dados com Algoritmos e C - (Marcos Aurelio Pcker Laureano).
 
 
 ### Os tipos de dados: Homogênios(Vetores) ou Heterogênios(Registros):
